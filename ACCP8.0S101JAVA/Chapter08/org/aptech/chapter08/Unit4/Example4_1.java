@@ -22,6 +22,7 @@ public class Example4_1 {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i].equals(ch)) {
 				index = i;// 保存下标
+				break;
 			}
 		}
 		System.out.println("插入字符的下标是:" + index);
