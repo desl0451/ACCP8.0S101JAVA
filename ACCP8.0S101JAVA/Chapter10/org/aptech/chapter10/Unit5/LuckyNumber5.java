@@ -19,6 +19,7 @@ public class LuckyNumber5 {
 			System.out.println("\t2.登录");
 			System.out.println("\t3.抽奖");
 			System.out.println("***************************************");
+			System.out.print("请选择菜单:");
 			int i = input.nextInt();
 			switch (i) {
 			case 1:
@@ -45,7 +46,9 @@ public class LuckyNumber5 {
 						System.out.println("欢迎您:" + newName);
 						break;
 					} else {
-						System.out.println("您还有" + (3 - n) + "次机会");
+						if (n != 3)
+							System.err.println("您还有" + (3 - n) + "次机会");
+						System.err.println("用户名或密码错误");
 					}
 				}
 				break;
