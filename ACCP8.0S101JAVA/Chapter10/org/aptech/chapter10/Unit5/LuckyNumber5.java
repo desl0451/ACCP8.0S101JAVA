@@ -59,7 +59,7 @@ public class LuckyNumber5 {
 
 				// Éú³ÉËæ»ú¿¨ºÅ
 				for (int k = 0; k < cardNum.length; k++) {
-					cardNum[k] = (int) (Math.random() * (max - min)) + min;
+					cardNum[k] =1234;// (int) (Math.random() * (max - min)) + min;
 					System.out.print(cardNum[k] + " ");
 					if (cardNo == cardNum[k]) {
 						bl = true;
